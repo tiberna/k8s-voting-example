@@ -11,7 +11,7 @@ Have access to a Kubernetes cluster (AKS, EKS, GKE, Docker Desktop with Kubernet
 Architecture
 -----
 
-![Architecture diagram](files/architecture.png)
+![Architecture diagram](/files/architecture.png)
 
 * A front-end web app in Python which lets you vote between two options
 * A [Redis](https://hub.docker.com/_/redis/) queue which collects new votes
@@ -28,7 +28,7 @@ kubectl create namespace vote
 ```
 Then you may follow two tutorials:
 ### Hard way :)
-Follow this [overview instructions](tutorials/hard-way-tutorial.md) for each step and you need to create the files by your own
+Follow this [overview instructions](/tutorials/hard-way-tutorial.md) for each step and you need to create the files by your own
 
 ### Step-by-step instructions
-- [Step #1](tutorials/step1-instructions.md): Postgres database backed by a Docker volume
+- [Step #1](/tutorials/step1-instructions.md): Postgres database backed by a Docker volume
