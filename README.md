@@ -37,11 +37,19 @@ Follow this [overview instructions](/tutorials/hard-way-tutorial.md) for each st
 - [Step #4](/tutorials/step4-instructions.md): Vote microservice which will allow end-users to vote for their favorite pet.
 - [Step #5](/tutorials/step5-instructions.md): Worker microservice which will receive and then store votes in the database.
 
-Now, you should have a total of 5 Deployments and 4 Services at minimum. Create these objects using the Kubernetes CLI.
+You should have a total of 5 Deployments and 4 Services at minimum. Create these objects using the Kubernetes CLI.
 
-At this point, you should be able to access the Voting App via port 31000 and 31001. However, if it isn't working properly, you need to debug.
+At this point, you should be able to access the Voting App via port 31000 and 31001. 
+
+Try to make vote (only one per client, use private windows and other browsers) and check if everything is working properly.
+
+However, if it isn't working properly, you need to debug.
 
 Check the status of all Services and Deployments. Read the logs from all of your Pods. Double-check configuration specified in all steps of the lab.
+
+Using this command you may check logs from your pods:
+```
+kubectl logs <pod_name>
 
 Don't forget to check your resources on namespace 'vote' using this flag on all commands:
 ```
@@ -53,11 +61,11 @@ Or changing your default namespace for 'vote' namespace:
 kubectl config set-context --current --namespace=vote
 ```
 
-- [Step #6](/tutorials/step6-instructions.md): Interacting with the Voting App
+- [Step #6](/tutorials/step6-instructions.md): Fix your Voting App
 
 
 Resources
 -----
 Original repo for Voting App: https://github.com/dockersamples/example-voting-app
 
-Kubernetes basics: 
+Kubernetes basics: https://www.youtube.com/playlist?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT

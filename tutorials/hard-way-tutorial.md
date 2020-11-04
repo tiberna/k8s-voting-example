@@ -48,26 +48,43 @@ Step #6 - Debug your app
 
 You should have a total of 5 Deployments and 4 Services at minimum. Create these objects using the Kubernetes CLI.
 
-At this point, you should be able to access the Voting App via port 31000 and 31001. However, if it isn't working properly, you need to debug.
+At this point, you should be able to access the Voting App via port 31000 and 31001. 
+
+Try to make vote (only one per client, use private windows and other browsers) and check if everything is working properly.
+
+However, if it isn't working properly, you need to debug.
 
 Check the status of all Services and Deployments. Read the logs from all of your Pods. Double-check configuration specified in all steps of the lab.
 
-Step #7 - Interact with your Voting App
+Using this command you may check logs from your pods:
+```
+kubectl logs <pod_name>
+```
+
+Step #7 - Fix and improve with your Voting App
 -----
 
-Now that the application has been deployed, the developers have a few patches. The Vote microservice should be upgraded to the following version:
+### Fix Results
 
+Regarding not having updates on results page we need to update the image from worker and results.
+
+New Worker image:
 ```
-dockersamples/examplevotingapp_vote:after
+tasb/example-voting-app_worker
 ```
 
-In addition, the result microservice has an update:
+New Results image:
+```
+tasb/example-voting-app_result:after
+```
 
-```
-dockersamples/examplevotingapp_result:after
-```
+Update the images on your files and check if evertyhing is working properly.
+
+### Be prepared for launching
 
 Now that the application has been updated, you need to prepare for the launch of the application. There will be many end-users, so the frontend should be scaled up to 3 total replicas.
+
+### Use secrets
 
 Regarding Postgres configuration the password must be set using a secret do not share your password inside your repo.
 
