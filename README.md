@@ -50,6 +50,7 @@ Check the status of all Services and Deployments. Read the logs from all of your
 Using this command you may check logs from your pods:
 ```
 kubectl logs <pod_name>
+```
 
 Don't forget to check your resources on namespace 'vote' using this flag on all commands:
 ```
