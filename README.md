@@ -43,6 +43,16 @@ At this point, you should be able to access the Voting App via port 31000 and 31
 
 Check the status of all Services and Deployments. Read the logs from all of your Pods. Double-check configuration specified in all steps of the lab.
 
+Don't forget to check your resources on namespace 'vote' using this flag on all commands:
+```
+-n vote
+```
+
+Or changing your default namespace for 'vote' namespace:
+```
+kubectl config set-context --current --namespace=vote
+```
+
 - [Step #6](/tutorials/step6-instructions.md): Interacting with the Voting App
 
 
