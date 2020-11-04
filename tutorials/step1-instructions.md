@@ -40,7 +40,7 @@ spec:
 
 On this you're stating that you want 1 replica of the pod and must have the label 'db' assinged to it.
 
-After that, you need to specify your pod definition. This pod will user the public available 
+After that, you need to specify your pod definition. This pod use the public available [Postgres](https://hub.docker.com/_/postgres) docker images on tag 9.5:
 
 ```
 template:

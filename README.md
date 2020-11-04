@@ -15,7 +15,7 @@ Architecture
 
 * A front-end web app in Python which lets you vote between two options
 * A [Redis](https://hub.docker.com/_/redis/) queue which collects new votes
-* A .NET Core worker which consumes votes and stores them in…
+* A .NET Core worker which consumes votes and stores them in database
 * A [Postgres](https://hub.docker.com/_/postgres/) database backed by a Docker volume
 * A Node.js webapp which shows the results of the voting in real time
 
@@ -32,3 +32,22 @@ Follow this [overview instructions](/tutorials/hard-way-tutorial.md) for each st
 
 ### Step-by-step instructions
 - [Step #1](/tutorials/step1-instructions.md): Postgres database backed by a Docker volume
+- [Step #2](/tutorials/step2-instructions.md): Redis which will collect new votes for the application.
+- [Step #3](/tutorials/step3-instructions.md): Result microservice which will present the results of the vote to end-users.
+- [Step #4](/tutorials/step4-instructions.md): Vote microservice which will allow end-users to vote for their favorite pet.
+- [Step #5](/tutorials/step5-instructions.md): Worker microservice which will receive and then store votes in the database.
+
+Now, you should have a total of 5 Deployments and 4 Services at minimum. Create these objects using the Kubernetes CLI.
+
+At this point, you should be able to access the Voting App via port 31000 and 31001. However, if it isn't working properly, you need to debug.
+
+Check the status of all Services and Deployments. Read the logs from all of your Pods. Double-check configuration specified in all steps of the lab.
+
+- [Step #6](/tutorials/step6-instructions.md): Interacting with the Voting App
+
+
+Resources
+-----
+Original repo for Voting App: https://github.com/dockersamples/example-voting-app
+
+Kubernetes basics: 
