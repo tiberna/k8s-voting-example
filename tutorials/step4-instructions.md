@@ -35,7 +35,7 @@ spec:
       app: vote
 ```
 
-On this you're stating that you want 1 replica of the pod and must have the label 'result' assinged to it.
+On this you're stating that you want 1 replica of the pod and must have the label 'vote' assinged to it.
 
 After that, you need to specify your pod definition. This pod use the public available 'dockersamples/examplevotingapp_vote:before' docker image and expose port 80:
 
