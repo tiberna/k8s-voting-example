@@ -28,7 +28,7 @@ kubectl create namespace vote
 ```
 Then you may follow two tutorials:
 ### Hard way :)
-Follow this [overview instructions] () for each step and you need to create the files by your own
+Follow this [overview instructions](https://github.com/tiberna/k8s-voting-example/blob/main/hard-way-tutorial.md) for each step and you need to create the files by your own
 
 ### Step-by-step instructions
 - [Step #1](https://github.com/tiberna/k8s-voting-example/blob/step1/step1-instructions.md): [Postgres](https://hub.docker.com/_/postgres/) database backed by a Docker volume
