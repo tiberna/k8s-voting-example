@@ -69,4 +69,6 @@ dockersamples/examplevotingapp_result:after
 
 Now that the application has been updated, you need to prepare for the launch of the application. There will be many end-users, so the frontend should be scaled up to 3 total replicas.
 
+Regarding Postgres configuration the password must be set using a secret do not share your password inside your repo.
+
 At this point, you've successfully deployed the Voting App, congratulations!
