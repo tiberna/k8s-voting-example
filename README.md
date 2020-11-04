@@ -63,6 +63,9 @@ kubectl config set-context --current --namespace=vote
 
 - [Step #6](/tutorials/step6-instructions.md): Fix your Voting App
 
+After making the test you figured out that your application have some issues.
+
+Let's make some changes on the files to fix it and then do some improvements on our Voting App
 
 Resources
 -----
