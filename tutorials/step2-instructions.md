@@ -38,7 +38,7 @@ spec:
 
 On this you're stating that you want 1 replica of the pod and must have the label 'redis' assinged to it.
 
-After that, you need to specify your pod definition. This pod use the public available [Redis](https://hub.docker.com/_/redis) docker images with tag alpine :
+After that, you need to specify your pod definition. This pod use the public available [Redis](https://hub.docker.com/_/redis) docker images with tag alpine and expose port 6379:
 
 ```
 template:
@@ -53,8 +53,6 @@ spec:
     - containerPort: 6379
         name: redis
 ```
-
-On this code you can check how to configure environment variables on a container that allows to define Postgres username and password
 
 The last step is to configure the volume inside 'spec' block:
 ```
