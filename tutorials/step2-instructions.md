@@ -42,10 +42,10 @@ After that, you need to specify your pod definition. This pod use the public ava
 
 ```
 template:
-metadata:
+  metadata:
     labels:
     app: redis
-spec:
+  spec:
     containers:
     - image: redis:alpine
     name: redis
