@@ -44,13 +44,13 @@ After that, you need to specify your pod definition. This pod use the public ava
 template:
   metadata:
     labels:
-    app: redis
+      app: redis
   spec:
     containers:
     - image: redis:alpine
-    name: redis
-    ports:
-    - containerPort: 6379
+      name: redis
+      ports:
+      - containerPort: 6379
         name: redis
 ```
 
