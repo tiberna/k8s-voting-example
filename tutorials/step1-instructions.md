@@ -40,7 +40,7 @@ spec:
 
 On this you're stating that you want 1 replica of the pod and must have the label 'db' assinged to it.
 
-After that, you need to specify your pod definition:
+After that, you need to specify your pod definition. This pod will user the public available 
 
 ```
 template:
@@ -49,7 +49,7 @@ template:
         app: db
     spec:
       containers:
-      - image: postgres:9.4
+      - image: postgres:9.5
         name: postgres
         env:
         - name: POSTGRES_USER
