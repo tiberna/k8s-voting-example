@@ -121,4 +121,8 @@ kubectl apply -f db-deployment.yaml
 kubectl apply -f db-service.yaml
 ```
 
+Next step
+-----
+
+Let's proceed to the [Step #2: Redis which will collect new votes for the application](step2-instructions.md).
 

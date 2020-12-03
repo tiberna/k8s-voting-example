@@ -105,3 +105,7 @@ kubectl apply -f result-service.yaml
 ```
 
 
+Next step
+-----
+
+Let's proceed to the [Step #4: Vote microservice which will allow end-users to vote for their favorite pet](step4-instructions.md).

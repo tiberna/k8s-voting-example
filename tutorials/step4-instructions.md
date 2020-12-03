@@ -103,4 +103,7 @@ kubectl apply -f vote-deployment.yaml
 kubectl apply -f vote-service.yaml
 ```
 
+Next step
+-----
 
+Let's proceed to the [Step #5: Worker microservice which will receive and then store votes in the database](step5-instructions.md).

@@ -112,4 +112,8 @@ kubectl apply -f redis-deployment.yaml
 kubectl apply -f redis-service.yaml
 ```
 
+Next step
+-----
+
+Let's proceed to the [Step #3: Result microservice which will present the results of the vote to end-users](step3-instructions.md).
 

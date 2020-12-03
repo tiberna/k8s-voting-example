@@ -59,3 +59,7 @@ kubectl apply -f worker-deployment.yaml
 ```
 
 
+Next step
+-----
+
+Let's proceed to the [Step #6: Fix your Voting App](step6-instructions.md)
